@@ -2,9 +2,8 @@
 
 <head >
     <!--Link all css files-->
-    <link rel="stylesheet" href="css/head.css">
-    <link rel="stylesheet" href="css/body.css">
-    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!--Titles for Tab-->
     <title>Stefan Kurucz - CV</title>
 
@@ -17,15 +16,80 @@
 </head>
 
 <!--Main body structure-->
-<html>
+<html> 
     <body class="body">
        
-
-        <!--Header-->
+        <!--Topbar-->
         <div id="topbar" class="topbar">
-            <marquee behavior="scroll" direction="left"> These are my skills</marquee>
-
-
+            <marquee behavior="scroll" direction="left"><b>Blue Prism Professional Certified Developer</b>▪
+                <b>UiPath Certified Advanced RPA Developer ▪ RPA </b>▪ Robot Framework <b>
+                ▪ VB.NET ▪</b>VBA ▪ JavaScript ▪ HTML & CSS ▪ SAP scripting <b>▪ C# Advanced ▪</b>
+                SQL beginner ▪ SAP MM ▪ Excel 
+            </marquee>
         </div>
+         <!--EndOfTopbar-->
+
+    
+        <!--SideBar-->
+        <div id="sidebar" class="sidebar">
+            <ul id="sidebarlist">
+                <li><button type="button" onclick="sideBarClick('introduction')">Introduction</button></li>
+                <li> <button type="button" onclick="sideBarClick('professionalLife')">Professional Life</button></li>
+                <li> <button type="button" onclick="sideBarClick('education')">Education & Trainings</button></li>
+                <li><button type="button" onclick="sideBarClick('personalLife')">Personal Life</button></li>
+                <li><button type="button" onclick="sideBarClick('contancts')">Contancts</button></li>
+            </ul>
+        </div>
+        <!--EndOfSideBar-->
+
+
+        <!--Iframe for content-->
+        <iframe scrolling="no" id="mainFrame" src="html/intro.html" frameborder="0">
+            
+        </iframe>
+        <!--EndOfiFrame-->
+
     </body>
+
+    
+    <script>
+        function sideBarClick(button)
+        {
+            var element = document.getElementById('mainFrame');
+
+            switch (button) {
+
+                case "introduction":
+                    element.setAttribute('src',"html/intro.html");
+                    break;
+            
+                
+                case "professionalLife":
+                    element.setAttribute('src',"html/professionallife.html")  ;
+                    break;
+
+                    
+                case "personalLife":
+                    element.setAttribute('src', "html/personallife.html");
+                    break;
+
+                
+                case "contancts":
+                    element.setAttribute('src',"html/contacts.html");
+                    break;
+            
+                    case "education":
+                    element.setAttribute('src',"html/education.html");
+                    break;
+                    
+                default:
+                    /*Do nothing*/
+                    break;
+            }
+        }
+
+        
+            
+    </script>
+
 </html>

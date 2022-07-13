@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    font-family: 'open sans', sans-serif;
+}
+
+.body{
+    background-color: rgb(218, 233, 243);    
+}
+
+.topbar{
+    
+    top: 2px;
+    position: sticky;
+    background-color:rgb(0, 119, 181);
+    color: white;
+    width: 100%;
+    line-height:30px;
+    height: 30px;
+    text-align: center;
+    margin: 2px;
+    border: 1px solid gray;
+    
+    border-radius: 5px;
+    }
+
+.sidebar{
+    background: none;
+    color:white;
+    width: 15%;
+    text-align: left;
+    border-radius: 5px; 
+    line-height: 180%;
+    float: left;
+    position: relative;
+    top: 250px;   
+  
+}
+
+#sidebarlist
+{
+    list-style-type: none;
+}
+
+.ulprofessionallist
+{
+    list-style-type: square;
+}
+
+button{
+    background-color:rgb(0, 119, 181) ;
+    color: white;
+    border: none;
+    font-size: medium;
+    border-radius: 5px;
+    width: 150px;
+    text-align: left;
+}
+
+button:hover{
+    background-color:rgb(0, 39, 91) ; 
+}
+
+iframe{
+    
+    float: left;
+    width: 60%;
+    height: 5000px;
+    position: relative;
+    top:48px;
+    left: 120px;
+}
+
+
+
+
